@@ -1,0 +1,118 @@
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/Gengar.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.header,
+.button-container {
+    margin: 20px 0;
+}
+
+/* Estilo del cuadro de opciones */
+.options-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 120px auto 20px;
+    position: relative;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #ff5722;
+    /* Color de Halloween para títulos */
+}
+
+/* Estilo de los botones de opciones */
+button {
+    background-color: rgb(99, 0, 92, 0.3);
+    /* Color de Halloween para botones */
+    color: #fff;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Transición de color al pasar el cursor */
+}
+
+/* Cambio de color al pasar el cursor por encima */
+button:hover {
+    background-color: rgb(99, 0, 92, 0.6);
+    /* Nuevo color cuando se pasa el cursor por encima */
+}
+
+/* Cambio de color al hacer clic */
+button:active {
+    background-color: rgb(99, 0, 92);
+    /* Nuevo color cuando se hace clic */
+}
+
+button.selected {
+    background-color: rgb(151, 85, 146);
+    /* Nuevo color cuando el botón está seleccionado */
+    color: rgb(99, 0, 92);
+    /* Cambia el color del texto para hacerlo más legible */
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: rgba(255, 87, 34, 0.7);
+    /* Fondo semi-transparente */
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    /* Usar flexbox para centrar verticalmente */
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo semi-transparente */
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    /* Usar flexbox para centrar verticalmente */
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+}
+
+/* Estilo del texto del pie de página */
+footer p {
+    margin: 0;
+    font-size: 0.8em;
+    color: #fff;
+}

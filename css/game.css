@@ -1,0 +1,76 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    /* Color de fondo de la página */
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    background-color: #333;
+    /* Color de fondo del encabezado */
+    color: #fff;
+    /* Color del texto del encabezado */
+    padding: 20px;
+}
+
+/* Temporizador */
+.timer {
+    position: absolute;
+    top: 20px;
+    /* Espacio desde la parte superior */
+    right: 20px;
+    /* Espacio desde la parte derecha */
+    background-color: #fff;
+    /* Color de fondo del temporizador */
+    border: 2px solid #333;
+    border-radius: 50%;
+    /* Hace que el temporizador sea circular */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Contenedor del juego */
+.game-container {
+    text-align: center;
+    margin-top: 50px;
+    /* Espacio desde la parte superior del encabezado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Imagen del Pokémon (sprite o silueta) */
+#pokemon-sprite {
+    width: 200px;
+    /* Ancho del sprite */
+    height: auto;
+    /* Altura automática para mantener la proporción */
+}
+
+/* Opciones de respuesta */
+.answer-options {
+    margin-top: 20px;
+    /* Espacio desde la parte superior de la imagen del Pokémon */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Botones de respuesta */
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* Mensaje de error */
+.error-message {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+}
