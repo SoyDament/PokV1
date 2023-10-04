@@ -12,35 +12,24 @@
 
 <body>
     <header>
-        <h1>¡Adivina ese Pokémon!</h1>
+        <h1>¡¿Quien es ese Pokémon?!</h1>
     </header>
     <main>
-        <!-- Botones de selección de generación -->
-        <div class="button-container">
-            <h2>Selecciona una Generación:</h2>
-            <button id="generation-kanto" data-generation="1">Kanto</button>
-            <button id="generation-johto" data-generation="2">Johto</button>
-            <button id="generation-hoenn" data-generation="3">Hoenn</button>
-        </div>
-        <div class="button-container">
-            <h2>Selecciona una Dificultad:</h2>
-            <button id="difficulty-easy" data-value="easy">Fácil</button>
-            <button id="difficulty-medium" data-value="medium">Medio</button>
-            <button id="difficulty-hard" data-value="hard">Difícil</button>
-        </div>
-        <!-- Botón para comenzar el juego -->
-        <div class="button-container">
-            <button id="startbutton">Comenzar Juego</button>
-        </div>
 
-    </main>
-    <footer>
-        <p>&copy; 2023 Who's that Pokémon?</p>
-    </footer>
-    <!-- Enlazar archivo JavaScript principal -->
-    <script type="module" src="js\select.js"></script>
-    <script type="module" src="js\chooseGeneration.js"></script>
+        <h2>Generaciones </h2>
+        <button id="generation1-button" data-generation="1">Kanto</button>
+        <button id="generation2-button" data-generation="2">Johto</button>
+        <button id="generation3-button" data-generation="3">Hoenn</button>
 
+
+
+        <footer>
+            <p>&copy; 2023 Who's that Pokémon?</p>
+        </footer>
+        <!-- Enlazar archivo JavaScript principal -->
+        <script type="module" src="js/utils.js"></script>
+        <script type="module" src="js/select.js"></script>
+        <script type="module" src="js/game.js"></script>
 
 </body>
 

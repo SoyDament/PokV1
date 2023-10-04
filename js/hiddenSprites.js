@@ -3,18 +3,6 @@
 // Obtener el contenedor de sprites una vez para evitar búsquedas repetidas
 const spritesContainer = document.getElementById('sprites-container');
 
-// Función para ocultar los sprites de los Pokémon y mostrar la silueta (solo en modo difícil)
-function hidePokemonSprites() {
-    // Ocultar todos los sprites (puedes adaptar esto según tu estructura HTML/CSS)
-    const sprites = spritesContainer.querySelectorAll('img');
-    sprites.forEach((sprite) => {
-        sprite.style.display = 'none';
-    });
-
-    // Mostrar la silueta u otra representación en modo difícil
-    // Puedes agregar aquí el código para mostrar la silueta o cualquier otro elemento
-}
-
 // Función para mostrar los sprites de los Pokémon
 async function showPokemonSprites() {
     try {
@@ -52,23 +40,5 @@ function displayPokemonSprites(sprites) {
     });
 }
 
-// Función para manejar la lógica de acuerdo a la dificultad seleccionada
-function handleDifficultySelection(difficulty) {
-    switch (difficulty) {
-        case 'easy':
-        case 'medium':
-            showPokemonSprites();
-            // Aquí puedes agregar lógica adicional según el modo fácil o medio
-            break;
-        case 'hard':
-            hidePokemonSprites();
-            // Aquí puedes agregar lógica adicional según el modo difícil
-            break;
-        default:
-            console.warn(`Dificultad no reconocida: ${difficulty}`);
-            break;
-    }
-}
-
 // Exportar las funciones necesarias
-export { hidePokemonSprites, showPokemonSprites, handleDifficultySelection };
+export { showPokemonSprites };

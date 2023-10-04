@@ -74,3 +74,8 @@ button {
     color: red;
     font-weight: bold;
 }
+
+/* Estilo para ocultar el mensaje inicialmente */
+.hidden {
+    display: none;
+}
