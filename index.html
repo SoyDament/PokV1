@@ -4,33 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who's that Pokémon?</title>
-    <!-- Enlazar hoja de estilo CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Enlazar fuentes de iconos (ejemplo con Font Awesome) -->
+    <title>¿Quién es ese Pokémon?</title>
+    <link rel="stylesheet" href="css\styles.css"> <!-- Enlaza tu archivo CSS aquí -->
 </head>
 
 <body>
     <header>
-        <h1>¡¿Quien es ese Pokémon?!</h1>
+        <h1>¿Quién es ese Pokémon?</h1>
     </header>
     <main>
+        <div id="pokemon-container">
+            <img id="pokemon-image" src="" alt="Imagen del Pokémon">
+            <div id="options">
+                <button class="answer-button"></button>
+                <button class="answer-button"></button>
+                <button class="answer-button"></button>
+                <button class="answer-button"></button>
+            </div>
 
-        <h2>Generaciones </h2>
-        <button id="generation1-button" data-generation="1">Kanto</button>
-        <button id="generation2-button" data-generation="2">Johto</button>
-        <button id="generation3-button" data-generation="3">Hoenn</button>
+            <div id="error-text"></div>
+        </div>
+        <div id="message">
+            <p>¡Elige una opción!</p>
+        </div>
 
-
-
-        <footer>
-            <p>&copy; 2023 Who's that Pokémon?</p>
-        </footer>
-        <!-- Enlazar archivo JavaScript principal -->
-        <script type="module" src="js/utils.js"></script>
-        <script type="module" src="js/select.js"></script>
-        <!-- <script type="module" src="js/game.js"></script> -->
-
+    </main>
+    <script src="js\script.js"></script> <!-- Enlaza tu archivo JavaScript aquí -->
 </body>
 
 </html>

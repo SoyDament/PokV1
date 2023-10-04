@@ -1,118 +1,68 @@
-/* Estilo general de la página */
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('../images/Gengar.jfif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
+/* Reset de estilos para eliminar márgenes y rellenos predeterminados */
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #f2f2f2;
     text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para el título principal */
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Contenedor principal del juego */
+#pokemon-container {
+    text-align: center;
+    margin: 20px auto;
     padding: 20px;
-    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+}
+
+/* Estilos para la imagen del Pokémon */
+#pokemon-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para las opciones de respuesta */
+#options {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
+    gap: 10px;
 }
 
-.header,
-.button-container {
-    margin: 20px 0;
-}
-
-/* Estilo del cuadro de opciones */
-.options-container {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 400px;
-    margin: 120px auto 20px;
-    position: relative;
-}
-
-h2 {
-    font-size: 1.5em;
-    color: #ff5722;
-    /* Color de Halloween para títulos */
-}
-
-/* Estilo de los botones de opciones */
-button {
-    background-color: rgb(99, 0, 92, 0.3);
-    /* Color de Halloween para botones */
+.option {
+    background-color: #007BFF;
     color: #fff;
-    font-size: 1.2em;
-    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
-    margin: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    /* Transición de color al pasar el cursor */
-}
-
-/* Cambio de color al pasar el cursor por encima */
-button:hover {
-    background-color: rgb(99, 0, 92, 0.6);
-    /* Nuevo color cuando se pasa el cursor por encima */
-}
-
-/* Cambio de color al hacer clic */
-button:active {
-    background-color: rgb(99, 0, 92);
-    /* Nuevo color cuando se hace clic */
-}
-
-button.selected {
-    background-color: rgb(151, 85, 146);
-    /* Nuevo color cuando el botón está seleccionado */
-    color: rgb(99, 0, 92);
-    /* Cambia el color del texto para hacerlo más legible */
-}
-
-/* Estilo del encabezado */
-header {
-    background-color: rgba(255, 87, 34, 0.7);
-    /* Fondo semi-transparente */
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    /* Usar flexbox para centrar verticalmente */
-    justify-content: center;
-    /* Centrar horizontalmente */
-    align-items: center;
-    /* Centrar verticalmente */
-}
-
-h1 {
-    font-size: 2em;
-    margin: 0;
-}
-
-/* Estilo del pie de página */
-footer {
-    background-color: rgba(0, 0, 0, 0.7);
-    /* Fondo semi-transparente */
     padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    /* Usar flexbox para centrar verticalmente */
-    justify-content: center;
-    /* Centrar horizontalmente */
-    align-items: center;
-    /* Centrar verticalmente */
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-/* Estilo del texto del pie de página */
-footer p {
-    margin: 0;
-    font-size: 0.8em;
-    color: #fff;
+.option:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el mensaje */
+#message {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
 }
